@@ -1,0 +1,33 @@
+@import "./mixins";
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color: #fec300;
+  --second-color: #f9f6f2a8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Kanit", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--second-color);
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  @include cont();
+}
